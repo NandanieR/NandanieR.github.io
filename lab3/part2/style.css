@@ -1,0 +1,45 @@
+/*
+	Name: Nandanie Ramjug
+	File: style.css
+	Date: 26 February 2024
+	Creating a red box style.
+  */
+
+
+html {
+  font-family: sans-serif;
+  
+}
+
+div {
+  /* sizing and position */
+  width: 200px;
+  height: 200px; /* Added height */
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+  /* text */
+  font-size: 1.125rem; /* Added font size to match the specified size */
+  text-align: center;
+  color: #ffffff; /* Set color for text */
+  text-shadow: 1px 1px 1px black;
+  /*border*/
+  border-radius: 8px; /* Added border radius */
+  border: 1px solid #aa0000; /* Solid border color with a darker shade */
+  /* background */
+  background-color: #ff0000; /* Set a color for design */
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0.2)
+  ); /* semi-transparent gradient */
+  /* other effects */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4); /* Standard shadow for slightly raised look */
+  box-shadow: inset 3px 3px 5px rgba(255, 255, 255, 0.6), 
+  inset -3px -3px 5px rgba(0, 0, 0, 0.6), 2px 2px 5px black;
+  /* inset for a raised 3D look */
+}
