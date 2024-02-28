@@ -1,0 +1,202 @@
+/*
+	Name: Nandanie Ramjug
+	File: style.css
+	Date: 26 February 2024
+	Typesetting a community school.
+*/
+
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+  font-family: "serif";
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, 
+section, 
+aside, 
+nav, 
+footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* font imports */
+@font-face {
+  font-family: 'ciclefina';
+  src: url('cicle_fina-webfont.eot');
+  src: url('cicle_fina-webfont.eot?#iefix') format('embedded-opentype'),
+       url('cicle_fina-webfont.woff2') format('woff2'),
+       url('cicle_fina-webfont.woff') format('woff'),
+       url('cicle_fina-webfont.ttf') format('truetype'),
+       url('cicle_fina-webfont.svg#ciclefina') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'zantrokeregular';
+  src: url('zantroke-webfont.eot');
+  src: url('zantroke-webfont.eot?#iefix') format('embedded-opentype'),
+       url('zantroke-webfont.woff2') format('woff2'),
+       url('zantroke-webfont.woff') format('woff'),
+       url('zantroke-webfont.ttf') format('truetype'),
+       url('zantroke-webfont.svg#zantrokeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+/* typography */
+
+html {
+  font-family: 'ciclefina', serif;
+  font-size: 10px;
+}
+
+h1, 
+h2  {
+  font-family: 'zantrokeregular', sans-serif;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+section h2 + p {
+  text-indent: 20px;
+}
+
+p, 
+li {
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  word-spacing: 3px;
+}
+
+/* Link styling */
+
+a {
+  text-decoration: underline;
+  outline: none;
+}
+
+a[href*="http"] {
+  padding-right: 19px;
+  background: url(external-link-52.png) no-repeat 100% 0;
+  background-size: 16px 16px;
+}
+
+a:link, 
+a:visited {
+  color: #a66;
+}
+
+a:focus, 
+a:hover {
+  text-decoration: none;
+  color: #333;
+}
+
+a:active {
+  text-shadow: 0px 0px 1px #f00,
+               0px 0px 2px #f00,
+               0px 0px 3px black,
+               0px 0px 4px black;
+}
+
+/* lists */
+
+ul, 
+ol {
+  margin: 1.6rem 0;
+  padding-left: 20px; /*added padding for better alignment */
+}
+
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: lower-latin;
+}
+
+/* nav menu */
+
+nav ul {
+  padding-left: 0;
+  margin-top: 0.8rem;
+}
+
+nav li {
+  list-style-type: none;
+  margin-bottom: 2rem;
+}
+
+nav li a {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  line-height: 3;
+  text-align: center;
+  font-size: 2.5rem;
+  border: 1px solid #a66;
+}
+
+nav li a:focus, 
+nav li a:hover {
+  color: white;
+  background: #a66;
+}
+
+nav li a:active {
+  color: white;
+  background: black;
+}
