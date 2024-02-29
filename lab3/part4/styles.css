@@ -38,6 +38,7 @@ nav {
   padding: .5em;
   top: 0;
   position: sticky;
+  /* Added position: sticky to make the navigation bar sticky */
 }
 
 nav ul {
@@ -46,12 +47,14 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  /* Added display: flex and justify-content: space-between for layout */
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
   padding: .5em 1em;
+  /* Styling for navigation links */
 }
 
 .photos {
@@ -60,11 +63,13 @@ nav a {
   padding: 0;
   display: grid;
   gap: 1px;
-  grid-template-columns: 1fr 1fr; 
+  grid-template-columns: 1fr 1fr;
+  /* Applied grid layout for photos with 1px gap */
 }
 
 .feature {
   width: 200px;
   float: left;
   margin: 0 20px 20px 0;
+  /*  Applied float and margin for images in articles */
 }
